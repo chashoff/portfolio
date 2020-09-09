@@ -1,5 +1,7 @@
+"use strict";
 const mailer = require("nodemailer");
-const { Hello } = require("./hello_template");
+const { Hello } = require("../templates/hello_template");
+const { Thanks } = require("../templates/thanks_template");
 const getEmailData = ( to, name, template ) => {
     let data = null;
 
@@ -31,7 +33,7 @@ const sendForm = (to, name, type ) => {
         service: "Gmail",
         auth: {
             user: "lovast.management@gmail.com",
-            pass: "12345"
+            pass: "Zxg-4988"
         }
     })
 
@@ -47,4 +49,4 @@ const sendForm = (to, name, type ) => {
     })
 }
 
-module.export = { sendEmail };
+module.exports = { sendForm };

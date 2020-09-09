@@ -17,9 +17,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chashoff/portfolio-winner/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/chashoff/portfolio-winner#readme",
+  "homepage": "",
   "dependencies": {},
   "devDependencies": {
     "concurrently": "^5.3.0",

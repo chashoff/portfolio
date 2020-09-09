@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ParticlesBg from 'particles-bg';
 import '../styles/Home.css';
 import GridItem from '../components/gridItem';
-import $ from 'jquery';
+import $ from '../../node_modules/jquery/dist/jquery';
 import Social from '../components/social';
 
 class Home extends Component {

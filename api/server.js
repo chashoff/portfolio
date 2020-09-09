@@ -1,23 +1,21 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser');
+const cors = require('cors');
+const { sendForm } = require('../api/mail');
 
 // create express app
 const app = express();
+app.use(cors());
 
-//setup body parser and cookie parser
-app.use(bodyParser.urlencoded({ extended: true}));
-app.use(bodyParser.json());
-app.use(cookieParser());
+app.use(express.urlencoded({ extended: true}));
+app.use(express.json());
 
-app.post("/api/sendForm", (req, res) => {
+app.post("/api/sendForm", (req, res) => { 
+    const email = "lovast.management@gmail.com";
     console.log(req.body);
-
-    sendForm();
+    sendForm(email, req.body.name, "hello");
 
 })
 
-
-app.listen(5000, ()=> {
-    console.log("Server running at 5000.")
+app.listen(4000, ()=> {
+    console.log("Server running at 4000.")
 })

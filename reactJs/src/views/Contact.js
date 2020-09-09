@@ -1,6 +1,6 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/Contact.css';
-import axios from 'axios';
+import axios from '../../node_modules/axios';
 
 function Contact(){
     const [name, setName] = useState('');
@@ -18,7 +18,7 @@ function Contact(){
             message
         }
 
-        axios.post("http://localhost:5000/api/sendForm",dataToSubmit);
+        axios.post("http://localhost:4000/api/sendForm", dataToSubmit);
     }
 
     
