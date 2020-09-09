@@ -1,5 +1,4 @@
 import React, { Component, useState } from 'react';
-import ParticlesBg from 'particles-bg';
 import '../styles/Contact.css';
 import axios from 'axios';
 
