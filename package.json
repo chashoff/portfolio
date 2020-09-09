@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "backend": "cd api && nodemon server.js",
-    "frontend": "cd reactjs && npm start",
-    "dev": "concurrently \"npm run backend\" \"npm run start --prefix reactjs\""
+    "back-end": "cd api && nodemon server.js",
+    "front-end": "cd reactjs && npm start",
+    "dev": "concurrently \"npm run back-end\" \"npm run start --prefix reactjs\""
   },
   "repository": {
     "type": "git",
