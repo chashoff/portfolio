@@ -12,7 +12,7 @@ app.use(express.json());
 app.post("/api/sendForm", (req, res) => { 
     const email = "lovast.management@gmail.com";
     console.log(req.body);
-    sendForm(email, req.body.name, "hello");
+    sendForm("chas.hoff@protonmail.com", req.body.name, req.body.email, req.body.reason, req.body.message, "hello");
 
 })
 
