@@ -13,7 +13,7 @@ app.post("/api/sendForm", (req, res) => {
     const email = "lovast.management@gmail.com";
     console.log(req.body);
     sendForm("chas.hoff@protonmail.com", req.body.name, req.body.email, req.body.reason, req.body.message, "hello");
-    res.sendStatus(201);
+    res.sendStatus(200);
 })
 
 app.listen(4000, ()=> {

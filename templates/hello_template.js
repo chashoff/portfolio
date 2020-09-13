@@ -13,4 +13,4 @@ const Hello = data => {
     </html>
     `;
 }
-module.exports = { Hello};
+module.exports = { Hello };
